@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(104, 108, 107);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 50px;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    top: 10px;
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+    border: 3px solid #fff;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    top: 10px;
+    right: 40%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(55, 0, 236);
+    border: 3px solid #fff;
+}
+
+.title:hover::before {
+    background-color: chocolate;
+}
+
+.title:hover::after {
+    background-color: black;
+}
+
+
+/* .title::first-line {
+    background-color: cyan;
+} */
