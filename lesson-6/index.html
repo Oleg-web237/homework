@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-1</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <fieldset class="form-group">
+                <legend class="form-group-title">Ваши личные данные</legend>
+                <label for="name" class="label">ваше имя</label>
+                <input id="name" class="input" type="text" name="name" placeholder="имя" required>
+                <label for="age" class="label">ваш возраст</label>
+                <input id="age" class="input" type="number" name="age" placeholder="возраст" required>
+                <label for="tel" class="label">ваш номер телефона</label>
+                <input id="tel" class="input" type="tel" name="tel" placeholder="номер телефона" required inputmode="numeric">
+                <label for="email" class="label">ваш почта</label>
+                <input id="email" class="input" type="email" name="email" placeholder="ваша почта" required>
+            </fieldset>
+            <fieldset class="form-grup-2">
+                <label class="label" for="message">сообщение</label>
+                <textarea id="message" class="textarea" placeholder="ваше сообщение" name="message" required></textarea>
+                <label class="label">
+              <input class="checkbox" type="checkbox" name="checkbox" required >
+              <span></span>
+              <span class="checkbox-text">Согласен на все!</span>
+              
+            </label>
+            </fieldset>
+            <button class="button">Отправить</button>
+        </form>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

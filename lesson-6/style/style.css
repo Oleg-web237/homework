@@ -1,0 +1,209 @@
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.form {
+    border: 1px solid #333;
+    border-radius: 6px;
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+}
+
+.form-group {
+    border: none;
+    padding: 0;
+}
+
+.form-group-title {
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.textarea {
+    max-height: 150px;
+    min-height: 30px;
+    resize: vertical;
+}
+
+.input,
+.textarea {
+    border: 1px solid #333;
+    border-radius: 6px;
+    width: 100%;
+    padding: 5px 12px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.input:disabled,
+.textarea:disabled {
+    opacity: 0.7;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.checkbox-text {
+    font-size: 14px;
+}
+
+.button {
+    border: none;
+    border-radius: 6px;
+    padding: 6px 18px;
+    background-color: #5bc049;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.button:not(:disabled):active {
+    background-color: #a82b08;
+}
+
+.button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.input:focus-visible,
+.textarea:focus-visible,
+.button:focus-visible {
+    outline: 3px solid #ff1f84;
+    outline-offset: 1px;
+} */
+
+
+/* ---------------------------------------------------------------------- */
+
+body {
+    font-family: sans-serif;
+    color: rgb(7, 7, 7);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.form {
+    padding: 23px;
+    border: 3px solid rgb(82, 69, 67);
+    border-radius: 8px;
+    max-width: 330px;
+    width: 100%;
+}
+
+.form-group {
+    /* padding: 15px; */
+}
+
+.form-group-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.input,
+textarea {
+    /* min-width: 250px; */
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(200, 222, 155);
+    border-radius: 30px;
+    width: 100%;
+}
+
+.input:disabled {
+    opacity: 0.5;
+}
+
+.textarea {
+    max-height: 150px;
+    min-height: 30px;
+    resize: vertical;
+}
+
+.checkbox {
+    appearance: none;
+    accent-color: #48e180;
+    outline: none;
+}
+
+.checkbox::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: -15px;
+    margin-top: -14px;
+    border: 1px solid #48e180;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.checkbox:checked::after {
+    background: url(../images/check-icon.svg) no-repeat center#331dff;
+}
+
+.checkbox-text {
+    font-size: 14px;
+}
+
+.button {
+    border-radius: 4px;
+    padding: 5px 20px;
+    background-color: #2e18f3;
+    color: aliceblue;
+    transition: opacity 0.2s;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.button:active {
+    background-color: rgb(26, 26, 99);
+}
+
+.input:focus-visible,
+textarea:focus-visible,
+.checkbox:focus-visible::after,
+.button:focus-visible {
+    outline: 2px solid #48e180;
+    outline-offset: 1px;
+}
+
+.button:disabled,
+.checkbox:disabled::after {
+    opacity: 0.5;
+    cursor: default;
+}
