@@ -1,0 +1,426 @@
+body {
+    font-family: Oswald;
+    /* background-color: aquamarine; */
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1250px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+a:focus-visible,
+.hero__button:focus-visible,
+summary:focus-visible {
+    outline: 2px solid #3596ed;
+    outline-offset: 2px;
+}
+
+
+/* ------------------------------header-------------------------------------------- */
+
+.header {}
+
+.header__top {}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: solid rgba(211, 203, 217, 1);
+    gap: 10px;
+}
+
+.header__logo {}
+
+.logo {
+    padding: 30px 0px;
+}
+
+.header__img {}
+
+.header__phone {
+    padding: 30px 0px;
+    text-align: right;
+}
+
+.header__text {
+    color: #858e8a;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 4%;
+    margin-bottom: 8px;
+    /* text-align: left; */
+}
+
+.header__link {
+    color: #2c332f;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    /* text-align: right; */
+    transition: color 0.2s;
+}
+
+.header__link:hover {
+    color: #3596ED;
+}
+
+
+/* ------------------------------section__hero------------------- */
+
+.hero {
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 140px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 106px;
+    background: url(../imeges/img/декор.svg) repeat-x;
+    width: 100%;
+    height: 48px;
+    z-index: -1;
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.hero__title {}
+
+.here__teitle-text {
+    max-width: 492px;
+    font-family: Oswald;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+strong {
+    font-weight: 600;
+    color: rgba(53, 150, 237, 1);
+}
+
+.hero__text {
+    color: #535755;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 439px;
+    margin-bottom: 140px;
+}
+
+.hero__button {
+    display: inline-block;
+    gap: 10;
+    padding: 19px 32px 19px 32px;
+    background: #3596ed;
+    width: 270px;
+    height: 57px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    transition: opacity 0.2s, background-color 0.2s;
+}
+
+.hero__button:active {
+    background-color: #1177ca;
+}
+
+a:active {
+    color: #0d5590;
+}
+
+.hero__button:not(:disabled):active {
+    background-color: #1177ca;
+}
+
+.hero__button:hover {
+    opacity: 0.85;
+    cursor: default;
+}
+
+.hero__button:disabled {
+    opacity: 0.65;
+}
+
+.hero__img {
+    position: relative;
+    display: flex;
+}
+
+.hero__choose-text {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translatex(-50%);
+    border: 1px solid rgba(83, 87, 85, 1);
+    background: #ffffffe6;
+    gap: 10;
+    max-width: 161px;
+    padding: 22px;
+    font-family: Ubuntu;
+    color: #2c332f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+
+/* --------------------------section__news------------------------------- */
+
+.news {
+    margin-bottom: 140px;
+}
+
+.section__cards {}
+
+.section__cards-title {
+    margin-bottom: 40px;
+    color: var(--Text/Заголовочный, rgba(44, 51, 47, 1));
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+time {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--Text/Подпись, rgba(133, 142, 138, 1));
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.section__container {
+    display: flex;
+    gap: 28px;
+}
+
+article {
+    box-sizing: border-box;
+    border: 1px solid rgba(211, 203, 217, 1);
+    background: rgba(255, 255, 255, 1);
+    gap: 28px;
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+a::after {
+    content: "";
+    display: block;
+    background: url(../imeges/img/стрелка.svg);
+    width: 22px;
+    height: 9px;
+    transition: transform 0.4s;
+}
+
+a:hover::after {
+    transform: translateX(8px);
+}
+
+.section__info {
+    padding: 20px 20px 0;
+    max-width: 224px;
+}
+
+.section__info-text {
+    min-width: 244px;
+    margin-bottom: 12px;
+    color: var(--Text/Заголовочный, rgba(44, 51, 47, 1));
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer__card {
+    padding: 0 20px 20px;
+    color: var(--Акцент, rgba(53, 150, 237, 1));
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+/* ------------------faq__section---------------------------------- */
+
+.faq-section {
+    position: relative;
+}
+
+.faq-section::before {
+    content: "";
+    position: absolute;
+    top: 215px;
+    background: url(../imeges/img/декор.svg) repeat-x;
+    width: calc(50%-250px);
+    height: 48px;
+    z-index: -1;
+}
+
+.faq__container {
+    display: flex;
+    gap: 28px;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+details {
+    margin-bottom: 20px;
+    border-block: 1px solid #535755
+}
+
+.title-medium::after {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 22px;
+    background: url(../imeges/icon/стрелка\ bottom.svg) no-repeat center / cover;
+}
+
+.title-medium {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    cursor: pointer;
+    list-style: none;
+    color: #2c332f;
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details>p {
+    padding: 0 20px 20px;
+}
+
+
+/* -----------------footer---------------------------- */
+
+.footer {
+    background: linear-gradient(90.00deg, rgba(73, 169, 255, 0.2), rgba(252, 124, 217, 0.2) 100%);
+    margin-top: auto;
+}
+
+.footer__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    margin: 60px 0px 40px 0px;
+}
+
+.footer-img {}
+
+.footer__wrapp-nav {
+    display: flex;
+}
+
+.footer-nav {
+    color: #535755;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 730px;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+    margin-bottom: 80px;
+}
+
+.footer-lest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-item {
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.footer-item:hover {
+    color: #3596ED;
+}
+
+.footer__title {
+    display: flex;
+    justify-content: center;
+    color: #858e8a;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 4%;
+    padding: 40px;
+}
+
+.footer-text {}
