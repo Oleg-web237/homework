@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="burger-menu" height="40px" viewBox="0 -960 960 960" width="40px" fill="#d9ff00">
+    <path d="M156-269v-35h648v35H156Zm0-194v-35h648v35H156Zm0-194v-35h648v35H156Z" />
+  </symbol>
+
+  <symbol id="cross-menu" viewBox="0 -960 960 960" fill="#d9ff00">
+    <path
+      d="m252-212-38-40 227-228-227-230 38-40 229 230 227-230 38 40-227 230 227 228-38 40-227-230-229 230Z" />
+  </symbol>
+</svg>
