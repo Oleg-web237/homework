@@ -1,0 +1,84 @@
+.page__body {
+  background: var(--color-bg-light);
+  color: var(--color-text);
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.menu__link {
+  color: var(--color-text);
+}
+
+.btn--accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  color: #0b0b0b;
+  background: #d9ff00;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid #d9ff00;
+  border-radius: 20px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* ховер кнопки забронировать */
+.btn--accent:hover {
+  background: transparent;
+  color: #d9ff00;
+  box-shadow:
+    0 0 12px rgba(217, 255, 0, 0.35),
+    0 0 30px rgba(217, 255, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.header__btn:active {
+  transform: translateY(0);
+}
+
+/* ховер кнопки забронировать */
+
+/* ховер ссылки */
+.menu__link {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #d9ff00;
+  box-shadow: 0 0 10px rgba(217, 255, 0, 0.7);
+  transition: width 0.3s ease;
+}
+
+.menu__link:hover {
+  color: #d9ff00;
+}
+
+.menu__link:hover::after {
+  width: 100%;
+}
+
+/* ховер ссылки */
